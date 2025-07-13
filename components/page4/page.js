@@ -76,7 +76,7 @@ export default function Page5({data}) {
           <AnimatedSection>
             <div 
             className={style.bgInformation}>
-              <div className="relative z-10 bg-[#cfeecf] py-10">
+              <div className="relative z-10 bg-[#e2c8ee] py-10">
                   <div className="text-center text-4xl sm:text-5xl pb-10">
                     <h3 className="font-extrabold -mb-3 playfair ">We Are</h3>
                     <h3 className="GVibes border-b-2 border-gray-800 w-72 m-auto">Getting Married</h3>

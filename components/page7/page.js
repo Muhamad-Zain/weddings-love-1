@@ -23,7 +23,7 @@ export default function Page7({ id}) {
 
         
         getImage()
-        const messageRef = ref(database, `weddings-four/${id}/expresion/`)
+        const messageRef = ref(database, `weddings-love-1/${id}/expresion/`)
         onValue(messageRef ,(snapshot) => {
             const data = snapshot.val()
             const list = []
@@ -43,7 +43,7 @@ export default function Page7({ id}) {
                 setAlert('')
             }, 2000);
         } else {
-            const messages = ref(database, `/weddings-four/${id}/expresion/${Date.now()}`)
+            const messages = ref(database, `/weddings-love-1/${id}/expresion/${Date.now()}`)
             set(messages, {
                 name,
                 text:message
