@@ -186,7 +186,7 @@ export default function Page8({id, data}) {
                             className=' bg-gray-600 bg-opacity-80 text-white py-2 px-4 rounded-md'>Open Gift</button>
                         </div>
                     <div className={`${gift ? ' max-h-[200rem] opacity-100' : ' max-h-0 opacity-0 '} transition-all duration-500 ease-in-out  overflow-hidden w-full  py-5`}>
-                        {data?.gift?.one?.nameBank === data?.gift?.one?.nameBank ? (
+                        {data?.gift?.one?.nameBank ? (
                             <div className={style.cardBank}>
                             <h1 style={{textShadow:'2px 2px white'}} className='text-blue-800 font-bold text-3xl italic'>{data?.gift?.one?.nameBank}</h1>
                             <div className='py-5 italic'>
@@ -202,7 +202,7 @@ export default function Page8({id, data}) {
                             </button>
                             </div>
                         ): null}
-                        {data?.gift?.two?.nameBank === data?.gift?.two?.nameBank ? (
+                        {data?.gift?.two?.nameBank ? (
                             <div className={style.cardBank}>
                             <h1 style={{textShadow:'2px 2px white'}} className='text-blue-800 font-bold text-3xl italic'>{data?.gift?.two?.nameBank}</h1>
                             <div className='py-5 italic'>
@@ -220,22 +220,7 @@ export default function Page8({id, data}) {
                             {/* </div> */}
                             </div>
                         ): null}
-                        {/* {data?.gift?.home === data?.gift?.home ? (
-                            <div className='sm:w-[45%] w-[90%] my-2 bg-white border-4 border-double border-slate-600 bg-opacity-95 px-5 py-2 rounded-2xl'>
-                            <h1 className='text-black font-bold text-xl italic text-center'>Alamat kirim kado</h1>
-                            <div className='border-b-2 border-black' />
-                            <div className='flex justify-between py-5 text-sm text-slate-900 italic'>
-                                <p>{data?.gift?.home}</p>
-                            </div>
-                                <button
-                                    onClick={() => buttonCopy(data?.gift?.home)} 
-                                    disabled= {load3 ? true : false}
-                                    className='w-full py-1 bg-black bg-opacity-80 rounded-lg border flex justify-center items-center'>
-                                    <MdFileCopy className='mr-2' />
-                                    {load3 ? 'succes' : 'copy'}
-                                </button>
-                            </div>
-                        ): null} */}
+                       
                     </div>
                 </div>
             </AnimateSee>

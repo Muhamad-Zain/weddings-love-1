@@ -194,7 +194,7 @@ const login = async (email, password) => {
 
 
     return(
-        <section className="max-w-[400px] bg-yellow-600 mb-20 m-auto">
+        <section className="max-w-[400px] bg-yellow-600  m-auto">
             {verify ? (
               <div>
               <h3 className="text-center text-xl w-3/4 m-auto py-5 playfair">Add Data to template wedings exlusive</h3>
@@ -248,14 +248,6 @@ const login = async (email, password) => {
                   <p className="text-white">Alamat Rumah (kado)</p>
                   <input type="text" name="gift.home" className="w-full outline-none my-1 rounded-md px-2 py-2"  placeholder="ex. jl.Sudirman no.14 Jakarta Utara" onChange={handleChange} required/>
 
-                  {/* <label className="text-white text-xl italic">Story</label>
-                  <p className="text-white">Paragraf 1</p>
-                  <input type="text" name="story.one" className="w-full outline-none my-1 rounded-md px-2 py-2"  placeholder="ex. " onChange={handleChange} />
-                  <p className="text-white">Paragraf 2</p>
-                  <input type="text" name="story.two" className="w-full outline-none my-1 rounded-md px-2 py-2"  placeholder="ex. " onChange={handleChange} />
-                  <p className="text-white">Paragraf 3</p>
-                  <input type="text" name="story.tree" className="w-full outline-none my-1 rounded-md px-2 py-2"  placeholder="ex. " onChange={handleChange} />
-                   */}
                   <label className="text-white text-xl italic">link sosmed</label>
                   <p className="text-white ">Mens</p>
                   <input type="text" name="sosmed.mens.facebook" className="w-full outline-none my-1 rounded-md px-2 py-2" placeholder="Link Facebook" onChange={handleChange} />
@@ -268,43 +260,31 @@ const login = async (email, password) => {
                   <input type="text" name="sosmed.grils.twitter" className="w-full outline-none my-1 rounded-md px-2 py-2" placeholder="Link Twitter" onChange={handleChange} />
                   <input type="text" name="sosmed.grils.tiktok" className="w-full outline-none my-1 rounded-md px-2 py-2" placeholder="Link Tiktok" onChange={handleChange} />
 
-
-
                   <label className="text-white text-xl italic">Backround Weddings</label>
                   <p className="text-white py-2">background Hero</p>
                   <input type="file" className="text-white" onChange={handleFileChange} required name="hero" />
-                  {/* <p className="text-white py-2">background Home</p>
-                  <input type="file" className="text-white" onChange={handleFileChange} required name="home"/> */}
                   <p className="text-white py-2">profile mens</p>
                   <input type="file" className="text-white" onChange={handleFileChange} required name="groom"/>
                   <p className="text-white py-2">profile grils</p>
                   <input type="file" className="text-white"  onChange={handleFileChange} required name="bride"/>
-                  {/* <p className="text-white py-2">background Location</p>
-                  <input type="file" className="text-white" onChange={handleFileChange} required name="location"/>
-                  <p className="text-white py-2">background Love Story</p>
-                  <input type="file" className="text-white" onChange={handleFileChange} required name="story" />
-                  <p className="text-white py-2">background Wedding expresion</p>
-                  <input type="file" className="text-white" onChange={handleFileChange} required name="expresion" />
-                  <p className="text-white py-2">background RSVP & Gift</p>
-                  <input type="file" className="text-white" onChange={handleFileChange} required name="rsvp" /> */}
-
+                 
                   <label className="text-white text-xl italic grid">Galery</label>
                   <p className="text-white py-2">foto 1</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple />
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple />
                   <p className="text-white py-2">foto 2</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 3</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 4</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 5</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 6</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 7</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
                   <p className="text-white py-2">foto 8</p>
-                  <input type="file" className="text-white grid" onChange={handleFileChange} required name="galery" multiple/>
+                  <input type="file" className="text-white grid" onChange={handleFileChange}  name="galery" multiple/>
 
                   <button disabled={message ? true : false} type="submit" className={`${message ? 'bg-white w-full h-8 items-center ' : 'bg-slate-300 '}p-2 my-10 w-full flex justify-center  rounded-md`}>
                     {message ? (
